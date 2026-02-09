@@ -1,0 +1,37 @@
+desktop-image: "background.img"
+title-text: "AMD GRUB"
+title-color: "#ffffff"
+terminal-box: "terminal_console/terminal_*.png"
+terminal-width: "50%"
+terminal-height: "70%"
+
++ boot_menu {
+	left = 20%
+	top = 30%
+	width = 30%
+	height = 40%
+	item_color = "#cccccc"
+	selected_item_color = "#ffffff"
+	icon_width = 48
+	icon_height = 48
+	item_icon_space = 16
+	item_height = 35
+	item_spacing = 22
+
+	scrollbar = true
+	scrollbar_width = 7
+	scrollbar_thumb = "scrollbar/scroll_*.png"
+	scrollbar_slice = "center"
+
+	menu_pixmap_style = "menu/menu_*.png"
+	selected_item_pixmap_style = "selection/selection_*.png"
+}
+
++ label {
+  left = 144
+  top = 83%
+  align = "center"
+  id = "__timeout__"
+  text = "Highlighted OS will start in %d seconds"
+  color = "#ffffff"
+}
